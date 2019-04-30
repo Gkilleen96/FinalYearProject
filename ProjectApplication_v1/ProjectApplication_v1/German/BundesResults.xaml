@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectApplication_v1.BundesResults">
+    <Grid BackgroundColor="#548999">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="" Grid.Row="2" Grid.Column="0" BackgroundColor="#1c4a5c"/>
+        <Label Text="" Grid.Row="4" Grid.Column="0" BackgroundColor="#1c4a5c"/>
+        <Label Text="" Grid.Row="6" Grid.Column="0" BackgroundColor="#1c4a5c"/>
+
+        <Grid  Padding="5,5"  Grid.Row="3" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="60*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="1" Grid.Column="1"  BackgroundColor="#FFFFFF">
+
+                <Grid RowSpacing="0" ColumnSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="3"/>
+
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="2" Grid.Column="1" BackgroundColor="#C0C0C0"></Grid>
+                    <Grid Grid.Row="4" Grid.Column="1" BackgroundColor="#C0C0C0"></Grid>
+                    <Grid Grid.Row="6" Grid.Column="1" BackgroundColor="#C0C0C0"></Grid>
+                    <Grid Grid.Row="8" Grid.Column="1" BackgroundColor="#C0C0C0"></Grid>
+                    <Grid Grid.Row="10" Grid.Column="1" BackgroundColor="#C0C0C0"></Grid>
+                    <Grid Grid.Row="12" Grid.Column="1" BackgroundColor="#C0C0C0"></Grid>
+                    <Grid Grid.Row="14" Grid.Column="1" BackgroundColor="#C0C0C0"></Grid>
+                    <Grid Grid.Row="16" Grid.Column="1" BackgroundColor="#C0C0C0"></Grid>
+                    <Grid Grid.Row="18" Grid.Column="1" BackgroundColor="#C0C0C0"></Grid>
+
+                    <Grid Grid.Row="1" Grid.Column="1"  BackgroundColor="#C0C0C0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="35"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="35"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Label x:Name ="dateLabel"
+                                   Grid.Row="0" 
+                                   Text="SELECT DATE!" 
+                                   Grid.Column="1" 
+                                   FontSize="15"  
+                                   VerticalOptions="Center" 
+                                   HorizontalOptions="Center"/>
+
+                            <ImageButton Grid.Row="0" 
+                                         Grid.Column="2" 
+                                         Source="calendar.png" 
+                                         VerticalOptions="Center" 
+                                         HorizontalOptions="End" 
+                                         Clicked="Calender_Clicked"
+                                         />
+
+                            <DatePicker x:Name="datePicker"
+                                        MinimumDate="8/1/18"
+                                        MaximumDate="7/1/19"
+                                        Grid.Column="0"
+                                        Grid.Row="0"
+                                        IsVisible="False"
+                                        DateSelected="DatePicker_DateSelected"
+                                       
+                                        />
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Row="3" Grid.Column="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Label x:Name="TEAMH1" Grid.Row="0" Grid.Column="1" FontSize="8" VerticalOptions="Center" HorizontalOptions="End"/>
+
+                            <Label x:Name="SCOREH1" Grid.Row="0" Grid.Column="3" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label x:Name="DASH1" Grid.Row="0" Grid.Column="4" FontSize="10" Text=" - " VerticalOptions="Center" HorizontalOptions="Center" IsVisible="false"/>
+                            <Label x:Name="SCOREA1" Grid.Row="0" Grid.Column="5" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label x:Name="TEAMA1" Grid.Row="0" Grid.Column="7" FontSize="8" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="TIME1" Grid.Row="0" Grid.Column="8" FontSize="12" VerticalOptions="Center" HorizontalOptions="End"/>
+
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Row="5" Grid.Column="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Label x:Name="TEAMH2" Grid.Row="0" Grid.Column="1" FontSize="8" VerticalOptions="Center" HorizontalOptions="End"/>
+
+                            <Label x:Name="SCOREH2" Grid.Row="0" Grid.Column="3" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label x:Name="DASH2" Grid.Row="0" Grid.Column="4" FontSize="10" Text=" - " VerticalOptions="Center" HorizontalOptions="Center" IsVisible="false"/>
+                            <Label x:Name="SCOREA2" Grid.Row="0" Grid.Column="5" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label x:Name="TEAMA2" Grid.Row="0" Grid.Column="7" FontSize="8" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="TIME2" Grid.Row="0" Grid.Column="8" FontSize="12" VerticalOptions="Center" HorizontalOptions="End"/>
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Row="7" Grid.Column="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Label x:Name="TEAMH3" Grid.Row="0" Grid.Column="1" FontSize="8" VerticalOptions="Center" HorizontalOptions="End"/>
+
+                            <Label x:Name="SCOREH3" Grid.Row="0" Grid.Column="3" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label x:Name="DASH3" Grid.Row="0" Grid.Column="4" FontSize="10" Text=" - " VerticalOptions="Center" HorizontalOptions="Center" IsVisible="false"/>
+                            <Label x:Name="SCOREA3" Grid.Row="0" Grid.Column="5" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label x:Name="TEAMA3" Grid.Row="0" Grid.Column="7" FontSize="8" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="TIME3" Grid.Row="0" Grid.Column="8" FontSize="12" VerticalOptions="Center" HorizontalOptions="End"/>
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Row="9" Grid.Column="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Label x:Name="TEAMH4" Grid.Row="0" Grid.Column="1" FontSize="8" VerticalOptions="Center" HorizontalOptions="End"/>
+
+                            <Label x:Name="SCOREH4" Grid.Row="0" Grid.Column="3" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label x:Name="DASH4" Grid.Row="0" Grid.Column="4" FontSize="10" Text=" - " VerticalOptions="Center" HorizontalOptions="Center" IsVisible="false"/>
+                            <Label x:Name="SCOREA4" Grid.Row="0" Grid.Column="5" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label x:Name="TEAMA4" Grid.Row="0" Grid.Column="7" FontSize="8" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="TIME4" Grid.Row="0" Grid.Column="8" FontSize="12" VerticalOptions="Center" HorizontalOptions="End"/>
+
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Row="11" Grid.Column="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Label x:Name="TEAMH5" Grid.Row="0" Grid.Column="1" FontSize="8" VerticalOptions="Center" HorizontalOptions="End"/>
+
+                            <Label x:Name="SCOREH5" Grid.Row="0" Grid.Column="3" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label x:Name="DASH5" Grid.Row="0" Grid.Column="4" FontSize="10" Text=" - " VerticalOptions="Center" HorizontalOptions="Center" IsVisible="false"/>
+                            <Label x:Name="SCOREA5" Grid.Row="0" Grid.Column="5" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label x:Name="TEAMA5" Grid.Row="0" Grid.Column="7" FontSize="8" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="TIME5" Grid.Row="0" Grid.Column="8" FontSize="12" VerticalOptions="Center" HorizontalOptions="End"/>
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Row="13" Grid.Column="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Label x:Name="TEAMH6" Grid.Row="0" Grid.Column="1" FontSize="8" VerticalOptions="Center" HorizontalOptions="End"/>
+
+                            <Label x:Name="SCOREH6" Grid.Row="0" Grid.Column="3" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label x:Name="DASH6" Grid.Row="0" Grid.Column="4" FontSize="10" Text=" - " VerticalOptions="Center" HorizontalOptions="Center" IsVisible="false"/>
+                            <Label x:Name="SCOREA6" Grid.Row="0" Grid.Column="5" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label x:Name="TEAMA6" Grid.Row="0" Grid.Column="7" FontSize="8" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="TIME6" Grid.Row="0" Grid.Column="8" FontSize="12" VerticalOptions="Center" HorizontalOptions="End"/>
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Row="15" Grid.Column="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Label x:Name="TEAMH7" Grid.Row="0" Grid.Column="1" FontSize="8" VerticalOptions="Center" HorizontalOptions="End"/>
+
+                            <Label x:Name="SCOREH7" Grid.Row="0" Grid.Column="3" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label x:Name="DASH7" Grid.Row="0" Grid.Column="4" FontSize="10" Text=" - " VerticalOptions="Center" HorizontalOptions="Center" IsVisible="false"/>
+                            <Label x:Name="SCOREA7" Grid.Row="0" Grid.Column="5" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label x:Name="TEAMA7" Grid.Row="0" Grid.Column="7" FontSize="8" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="TIME7" Grid.Row="0" Grid.Column="8" FontSize="12" VerticalOptions="Center" HorizontalOptions="End"/>
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Row="17" Grid.Column="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Label x:Name="TEAMH8" Grid.Row="0" Grid.Column="1" FontSize="8" VerticalOptions="Center" HorizontalOptions="End"/>
+
+                            <Label x:Name="SCOREH8" Grid.Row="0" Grid.Column="3" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label x:Name="DASH8" Grid.Row="0" Grid.Column="4" FontSize="10" Text=" - " VerticalOptions="Center" HorizontalOptions="Center" IsVisible="false"/>
+                            <Label x:Name="SCOREA8" Grid.Row="0" Grid.Column="5" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label x:Name="TEAMA8" Grid.Row="0" Grid.Column="7" FontSize="8" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="TIME8" Grid.Row="0" Grid.Column="8" FontSize="12" VerticalOptions="Center" HorizontalOptions="End"/>
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Row="19" Grid.Column="1">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition Width="20"/>
+                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="20"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Label x:Name="TEAMH9" Grid.Row="0" Grid.Column="1" FontSize="8" VerticalOptions="Center" HorizontalOptions="End"/>
+
+                            <Label x:Name="SCOREH9" Grid.Row="0" Grid.Column="3" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label x:Name="DASH9" Grid.Row="0" Grid.Column="4" FontSize="10" Text=" - " VerticalOptions="Center" HorizontalOptions="Center" IsVisible="false"/>
+                            <Label x:Name="SCOREA9" Grid.Row="0" Grid.Column="5" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label x:Name="TEAMA9" Grid.Row="0" Grid.Column="7" FontSize="8" VerticalOptions="Center" HorizontalOptions="Start"/>
+                            <Label x:Name="TIME9" Grid.Row="0" Grid.Column="8" FontSize="12" VerticalOptions="Center" HorizontalOptions="End"/>
+                        </Grid>
+                    </Grid>
+
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid Padding="5,5" Grid.Row="2" Grid.Column="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <ImageButton 
+                Source="Home-Icon.png"
+                Grid.Column="0"
+                HorizontalOptions="End"
+                VerticalOptions="Center"
+                Clicked="Home_Clicked"
+                
+            />
+            <ImageButton 
+                Source="FBall-Icon.png"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"   
+                Clicked="Ball_Clicked"
+            />
+            <ImageButton
+                Source="GER-Flag.png"
+                Grid.Column="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" 
+                Clicked="Ger_Clicked"
+            />
+            <ImageButton
+                Source="Bundes.png"
+                Grid.Column="3"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" 
+                Clicked="Bundes_Clicked"
+            />
+            <Image
+                Source="Pitch.png"
+                Grid.Column="4"
+                HorizontalOptions="Start"
+                VerticalOptions="Center" 
+               
+            />
+        </Grid>
+
+        <Grid Padding="0,0" Grid.Row="4" Grid.Column="0">
+            <Image 
+                Source="UpdateBar-Icon.png"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+            />
+
+            <Label
+                Text="Dynamic Update Bar"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+        </Grid>
+
+        <Grid Padding="0,0" Grid.Row="6" Grid.Column="0">
+            <Image 
+                Source="Me-Icon.png"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+
+        </Grid>
+
+    </Grid>
+
+
+
+</ContentPage>

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectApplication_v1.CDLL">
+    <Grid BackgroundColor="#548999">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="" Grid.Row="2" Grid.Column="0" BackgroundColor="#1c4a5c"/>
+        <Label Text="" Grid.Row="4" Grid.Column="0" BackgroundColor="#1c4a5c"/>
+        <Label Text="" Grid.Row="6" Grid.Column="0" BackgroundColor="#1c4a5c"/>
+
+        <Grid  Padding="5,5"  Grid.Row="3" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="0.3*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+
+            <ImageButton 
+                Source="TeamsLeft-Icon.png"
+                Grid.Row="3"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Clicked="TeamsLeft_Clicked"
+            />
+
+            <ImageButton 
+                Source="Stages-Icon.png"
+                Grid.Row="3"
+                Grid.Column="3"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Clicked="Stages_Clicked"
+            />
+
+
+        </Grid>
+        <Grid Padding="5,5" Grid.Row="2" Grid.Column="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <ImageButton 
+                Source="Home-Icon.png"
+                Grid.Column="0"
+                HorizontalOptions="End"
+                VerticalOptions="Center"
+                Clicked="Home_Clicked"
+                
+            />
+            <ImageButton 
+                Source="FBall-Icon.png"
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"   
+                Clicked="Ball_Clicked"
+            />
+            <ImageButton
+                Source="FRA-Flag.png"
+                Grid.Column="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" 
+                Clicked="Fra_Clicked"
+            />
+            <Image
+                Source="CDLL.png"
+                Grid.Column="3"
+                HorizontalOptions="Start"
+                VerticalOptions="Center" 
+               
+            />
+        </Grid>
+
+        <Grid Padding="0,0" Grid.Row="4" Grid.Column="0">
+            <Image 
+                Source="UpdateBar-Icon.png"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+            />
+
+            <Label
+                Text="Dynamic Update Bar"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+        </Grid>
+
+        <Grid Padding="0,0" Grid.Row="6" Grid.Column="0">
+            <Image 
+                Source="Me-Icon.png"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+
+        </Grid>
+
+    </Grid>
+
+
+
+</ContentPage>
