@@ -18,5 +18,6 @@ namespace ProjectApplication_v1
         }
 
         private async void Button_Clicked(object sender, EventArgs e) => await Navigation.PushAsync(new FootballHome(data));
+        private async void Help_Clicked(object sender, EventArgs e) => await Navigation.PushAsync(new MainPage(data));
     }
 }

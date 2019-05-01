@@ -429,4 +429,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\testData.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Help-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\help.png" />
+  </ItemGroup>
 </Project>

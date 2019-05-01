@@ -1,27 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:ProjectApplication_v1"
-             x:Class="ProjectApplication_v1.MainPage">
+             x:Class="ProjectApplication_v1.HelpPage">
+    <Grid BackgroundColor="#548999">
 
-    
-        <!-- Place new controls here -->
-
-        <Grid BackgroundColor="#548999">
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="4*"/>
-                <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
             <RowDefinition Height="4*"/>
-                <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
             <RowDefinition Height="4*"/>
-                <RowDefinition Height="0.5*"/>
-            </Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
 
         <Label Text="" Grid.Row="2" Grid.Column="0" BackgroundColor="#1c4a5c"/>
         <Label Text="" Grid.Row="4" Grid.Column="0" BackgroundColor="#1c4a5c"/>
@@ -45,62 +40,27 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <ImageButton 
-                Source="Football-Icon.png"
-                Grid.Row="1"
-                Grid.Column="1"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                Clicked ="Button_Clicked"
-            />
-
-            <ImageButton 
-                Source="AF-Icon.png"
-                Grid.Row="1"
-                Grid.Column="3"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-            />
-
-            <ImageButton 
-                Source="Soon-Icon.png"
-                Grid.Row="3"
-                Grid.Column="1"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-            />
-
-            <ImageButton 
-                Source="Soon-Icon.png"
-                Grid.Row="3"
-                Grid.Column="3"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-            />
-
-            <ImageButton 
-                Source="Soon-Icon.png"
-                Grid.Row="5"
-                Grid.Column="1"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-            />
-
-            <ImageButton 
-                Source="Help-Icon.png"
-                Grid.Row="5"
-                Grid.Column="3"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                Clicked ="Help_Clicked"
-            />
 
         </Grid>
         <Grid Padding="5,5" Grid.Row="2" Grid.Column="0">
-            <Image 
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <ImageButton 
                 Source="Home-Icon.png"
-                HorizontalOptions="Center"
+                Grid.Column="0"
+                HorizontalOptions="End"
                 VerticalOptions="Center"
+                Clicked ="Home_Clicked"
+            />
+            <Image 
+                Source="Help.png"
+                Grid.Column="1"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"       
             />
         </Grid>
 
@@ -110,7 +70,7 @@
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
             />
-            
+
             <Label
                 Text="Dynamic Update Bar"
                 HorizontalOptions="Center"
@@ -124,7 +84,7 @@
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
                 />
-            
+
         </Grid>
 
     </Grid>
