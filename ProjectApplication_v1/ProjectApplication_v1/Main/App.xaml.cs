@@ -21,7 +21,7 @@ namespace ProjectApplication_v1
         protected override void OnStart()
         {
             // Handle when your app starts
-            /*data.eplResults = initEPLResults();
+            data.eplResults = initEPLResults();
             data.eplTable = initEPLTable();
             data.chaResults = initCHAResults();
             data.chaTable = initCHATable();
@@ -36,7 +36,7 @@ namespace ProjectApplication_v1
             data.itaResults = initITAResults();
             data.itaTable = initITATable();
             data.gerResults = initGERResults();
-            data.gerTable = initGERTable();*/
+            data.gerTable = initGERTable();
         }
 
         protected override void OnSleep()

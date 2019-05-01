@@ -467,11 +467,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Georg\\Desktop\\PROJECT\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1.csproj",
+      "projectUniqueName": "C:\\Users\\Georg\\Desktop\\FinalYearProject\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1.csproj",
       "projectName": "ProjectApplication_v1",
-      "projectPath": "C:\\Users\\Georg\\Desktop\\PROJECT\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1.csproj",
+      "projectPath": "C:\\Users\\Georg\\Desktop\\FinalYearProject\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1.csproj",
       "packagesPath": "C:\\Users\\Georg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Georg\\Desktop\\PROJECT\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1\\obj\\",
+      "outputPath": "C:\\Users\\Georg\\Desktop\\FinalYearProject\\ProjectApplication_v1\\ProjectApplication_v1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

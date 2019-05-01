@@ -23,23 +23,12 @@
         <Label Text="" Grid.Row="6" Grid.Column="0" BackgroundColor="#1c4a5c"/>
 
         <Grid  Padding="5,5"  Grid.Row="3" Grid.Column="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="4*"/>
-                <ColumnDefinition Width="0.3*"/>
-                <ColumnDefinition Width="4*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="4*"/>
-                <RowDefinition Height="0.3*"/>
-                <RowDefinition Height="4*"/>
-                <RowDefinition Height="0.3*"/>
-                <RowDefinition Height="4*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
 
+            <Image 
+                Source="helpimg.png"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"       
+            />
 
         </Grid>
         <Grid Padding="5,5" Grid.Row="2" Grid.Column="0">
@@ -57,7 +46,7 @@
                 Clicked ="Home_Clicked"
             />
             <Image 
-                Source="Help.png"
+                Source="help.png"
                 Grid.Column="1"
                 HorizontalOptions="Start"
                 VerticalOptions="Center"       

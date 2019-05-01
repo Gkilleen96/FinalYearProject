@@ -1160,11 +1160,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Georg\\Desktop\\PROJECT\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1.iOS\\ProjectApplication_v1.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Georg\\Desktop\\FinalYearProject\\ProjectApplication_v1\\ProjectApplication_v1.iOS\\ProjectApplication_v1.iOS.csproj",
       "projectName": "ProjectApplication_v1.iOS",
-      "projectPath": "C:\\Users\\Georg\\Desktop\\PROJECT\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1.iOS\\ProjectApplication_v1.iOS.csproj",
+      "projectPath": "C:\\Users\\Georg\\Desktop\\FinalYearProject\\ProjectApplication_v1\\ProjectApplication_v1.iOS\\ProjectApplication_v1.iOS.csproj",
       "packagesPath": "C:\\Users\\Georg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Georg\\Desktop\\PROJECT\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Georg\\Desktop\\FinalYearProject\\ProjectApplication_v1\\ProjectApplication_v1.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1181,8 +1181,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Georg\\Desktop\\PROJECT\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1.csproj": {
-              "projectPath": "C:\\Users\\Georg\\Desktop\\PROJECT\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1.csproj"
+            "C:\\Users\\Georg\\Desktop\\FinalYearProject\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1.csproj": {
+              "projectPath": "C:\\Users\\Georg\\Desktop\\FinalYearProject\\ProjectApplication_v1\\ProjectApplication_v1\\ProjectApplication_v1.csproj"
             }
           }
         }

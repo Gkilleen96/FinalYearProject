@@ -16,8 +16,9 @@ namespace ProjectApplication_v1
 		{
 			InitializeComponent ();
             NavigationPage.SetHasNavigationBar(this, false);
-            populateLeagueData();
+            
             data = d1;
+            populateLeagueData();
         }
         public void populateLeagueData()
         {

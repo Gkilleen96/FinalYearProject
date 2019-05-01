@@ -147,3 +147,4 @@ C:\Users\Georg\Desktop\FinalYearProject\ProjectApplication_v1\ProjectApplication
 C:\Users\Georg\Desktop\FinalYearProject\ProjectApplication_v1\ProjectApplication_v1.iOS\obj\iPhoneSimulator\Debug\ProjectApplication_v1.iOS.csproj.CopyComplete
 C:\Users\Georg\Desktop\FinalYearProject\ProjectApplication_v1\ProjectApplication_v1.iOS\obj\iPhoneSimulator\Debug\ProjectApplication_v1.iOS.exe
 C:\Users\Georg\Desktop\FinalYearProject\ProjectApplication_v1\ProjectApplication_v1.iOS\obj\iPhoneSimulator\Debug\ProjectApplication_v1.iOS.pdb
+C:\Users\Georg\Desktop\FinalYearProject\ProjectApplication_v1\ProjectApplication_v1.iOS\obj\iPhoneSimulator\Debug\optimized\helpimg.png
