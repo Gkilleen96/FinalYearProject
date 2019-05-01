@@ -2,7 +2,6 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjectApplication_v1.App">
-    <Application.Resources BackgroundColor="#548999">
-
+    <Application.Resources BackgroundColor="#1c4a5c">
     </Application.Resources>
 </Application>

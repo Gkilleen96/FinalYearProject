@@ -11,11 +11,17 @@ namespace ProjectApplication_v1
 {
     public partial class App : Application
     {
+        apiData data = new apiData();
         public App()
         {
             InitializeComponent();
-            apiData data = new apiData();
 
+            MainPage = new NavigationPage(new MainPage(data));
+        }
+
+        protected override void OnStart()
+        {
+            // Handle when your app starts
             data.eplResults = initEPLResults();
             data.eplTable = initEPLTable();
             data.chaResults = initCHAResults();
@@ -32,13 +38,6 @@ namespace ProjectApplication_v1
             data.itaTable = initITATable();
             data.gerResults = initGERResults();
             data.gerTable = initGERTable();
-
-            MainPage = new NavigationPage(new LoadingPage());
-        }
-
-        protected override void OnStart()
-        {
-            // Handle when your app starts
         }
 
         protected override void OnSleep()
